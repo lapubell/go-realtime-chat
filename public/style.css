@@ -2,10 +2,16 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    color: white;
+    background-color: black;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+.row {
+    background-color: black;
 }
 
 #chat-messages {
@@ -13,4 +19,74 @@ main {
     height: 60vh;
     width: 100%;
     overflow-y: scroll;
+}
+
+nav {
+    background-color: black;
+}
+
+.characters {
+    overflow-x: scroll;
+    display: flex;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.character.active {
+    border-color: white;
+}
+
+.character {
+    text-align: center;
+    width: 200px;
+    flex-shrink: 0;
+    border: 2px solid black;
+}
+
+.join-form {
+    width: 100%;
+}
+
+.dice div {
+    border-radius: 10px;
+}
+
+.dice .disabled {
+    opacity: 0.25;
+}
+
+.slider p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slider input {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > * {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.notesWrapper {
+    padding-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 34px);
+}
+
+.slider .starting {
+    color: green;
+    font-weight: bold;
 }
