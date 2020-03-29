@@ -5,9 +5,8 @@ This is a simple app written in Vue and Go to make playing Betrayal at House on 
 Just run the following
 
 ```
-cd ./src
-go get github.com/gorilla/websocket
-go run main.go
+chmod +x ./build.sh
+cd ./build.sh
 ```
 
-Then point your browser to http://localhost:8000
+Then point your browser to http://localhost:8888
